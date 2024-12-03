@@ -1,0 +1,390 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Prevents scrollbars */
+}
+
+/* Line 2 */
+.line-2 {
+  position: absolute;
+  width: 500px;
+  left: 360px;
+  top: 100px;
+  border: 1px solid #460000;
+  transform: rotate(90deg);
+}
+
+/* Rectangle 1 */
+.rectangle-1 {
+  position: fixed;
+  width: 106px;
+  height: 1024px;
+  left: 0px;
+  background: #460000;
+  padding: 20px 0;
+  box-shadow: 0 -2px 5px rgba(192, 171, 171, 0.1);
+}
+
+/* General Link Styling */
+a {
+  text-decoration: none; 
+  color: inherit; 
+  cursor: pointer;
+}
+
+/* HERO */
+.gallery {
+  position: absolute;
+  width: 34px;
+  height: 15px;
+  left: 24px;
+  top: 440px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
+/* GALLERY */
+.hero {
+  position: absolute;
+  width: 56px;
+  height: 15px;
+  left: 33px;
+  top: 400px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+
+/* CONTACT INFO */
+.contact-info {
+  position: absolute;
+  width: 63px;
+  height: 30px;
+  left: 22px;
+  top: 482px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* a b o u t */
+.about {
+  position: absolute;
+  width: 10px;
+  height: 90px;
+  left: 570px;
+  top: 73px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #2A0000;
+}
+
+/* description */
+.description {
+  position: absolute;
+  width: 10px;
+  height: 90px;
+  left: 590px;
+  top: 73px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #2A0000;
+}
+
+/* Body Container */
+.body-container {
+  position: absolute;
+  width: 400px;
+  left: 157px;
+  top: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content */
+  gap: 20px; /* Add space between the image and text */
+}
+
+/* Profile Picture */
+.profile-picture {
+  width: 300px; 
+  height: 300px;
+  border-radius: 50%; /* Circular shape */
+  overflow: hidden;
+  margin-bottom: 20px; /* Space between image and text */
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes sure the image covers the circle */
+}
+
+/* All looks */
+.all-looks {
+  width: 400px; 
+  height: 250px;
+  border-radius: 0%; /* Circular shape */
+  overflow: hidden;
+  margin-bottom: 20px; /* Space between image and text */
+}
+
+.all-looks img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes sure the image covers the circle */
+}
+
+/* Body */
+.body {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.14em;
+  color: #333;
+  padding: 0 20px; /* Add padding to avoid text touching the sides */
+}
+
+
+/* icon */
+.icon {
+  position: absolute;
+  width: 500px;
+  height: 60px;
+  background-image: url('images/icon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 360px;
+  top: 400px;
+  transform: rotate(50deg);
+}
+
+/* Line 3 */
+.line-3 {
+  position: absolute;
+  width: 500px;
+  left: 360px;
+  top: 750px;
+  border: 1px solid #460000;
+  transform: rotate(90deg);
+}
+
+/* Cover */
+.cover {
+  display: flex;
+  position: absolute;
+  width: 900px;
+  height: 350px;
+  left: 740px;
+  border-radius: 40px;
+  background: url('images/cover.png') no-repeat center center;
+  background-size: contain;
+}
+
+/* Gallery Images */
+.gallery-images {
+  display: flex;
+  position: absolute;
+  left: 700px;
+  height: 450px;   
+  gap: 25px;
+  overflow-x: scroll; /* Enables horizontal scrolling */
+  padding: 20px 0;
+  justify-content: center;
+  width: 1000px;
+}
+
+.gallery-images img {
+  width: 250px;
+  border-radius: 40px;
+}
+
+/* Custom Scrollbar Styling */
+.gallery-images::-webkit-scrollbar {
+  height: 10px; 
+}
+
+.gallery-images::-webkit-scrollbar-track {
+  background: rgba(70, 0, 0, 0.25); /* Track color */
+  border-radius: 40px;
+}
+
+.gallery-images::-webkit-scrollbar-thumb {
+  background: #460000; /* Thumb color */
+  border-radius: 40px;
+}
+
+/* gallery word */ 
+.gall {
+  position: absolute;
+  left: 1190px;
+  top: 370px;
+  font-family: 'Inter', sans-serif;
+  color: #2A0000;
+}
+
+/* Contact Section */
+.contact-rectangle {
+  position: absolute;
+  width: 34px;
+  height: 174px;
+  right: 20px;
+  top: 60px;
+  background: rgba(70, 0, 0, 0.2);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  padding-top: 15px;
+}
+
+/* Instagram Icon */
+.icon-instagram {
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 280px;
+  right: 25px;
+  background: url('images/instagram.png') no-repeat center center;
+  background-size: 100%;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+/* LinkedIn Icon */
+.icon-phone {
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 380px;
+  right: 23px;
+  background: url('images/linkedin.png') no-repeat center center;
+  background-size: 100%;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+/* Apple Icon */
+.icon-mail {
+  display: block;
+  position: absolute;
+  width: 24px;
+  height: 180px;
+  right: 25px;
+  background: url('images/apple.png') no-repeat center center;
+  background-size: 100%;
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition */
+}
+
+/* Container for bottom elements */
+.bottom-elements {
+  position: fixed; /* Sticks to the bottom of the viewport */
+  bottom: 10px; /* Distance from the bottom edge */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Aligns content to the right */
+  padding-right: 30px;
+  gap: 10px; /* Adds spacing between rectangles */
+}
+
+/* Rectangle 4 */
+.rectangle-4 {
+  width: 110px;
+  height: 30px; /* Increased height for better fit */
+  background: #460000;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers content horizontally and vertically */
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px; /* Adjust font size */
+}
+
+/* Rectangle 5 */
+.rectangle-5 {
+  width: 240px;
+  height: 30px; /* Match height to Rectangle 4 */
+  background: #460000;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers content horizontally and vertically */
+  color: #FFFFFF;
+  font-family: 'Inter', sans-serif;
+  font-size: 12px; /* Adjust font size */
+}
+
+/* Phone Number */
+.phone-number {
+  font-size: 12px; /* Match font size to rectangle content */
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/* Email Address */
+.email-address {
+  font-size: 12px; /* Match font size to rectangle content */
+  color: #FFFFFF;
+  text-align: center;
+}
+
+/* Gallery Images */
+.images-img {
+  display: flex;
+  position: absolute;
+  left: 700px;
+  height: 450px;   
+  gap: 25px;
+  overflow-x: scroll; /* Enables horizontal scrolling */
+  padding: 20px 0;
+  justify-content: center;
+  width: 1000px;
+}
+
+.images-img img {
+  width: 250px;
+  border-radius: 40px;
+}
+
+/* Custom Scrollbar Styling */
+.images-img::-webkit-scrollbar {
+  height: 10px; 
+}
+
+.images-img::-webkit-scrollbar-track {
+  background: rgba(70, 0, 0, 0.25); /* Track color */
+  border-radius: 40px;
+}
+
+.images-img::-webkit-scrollbar-thumb {
+  background: #460000; /* Thumb color */
+  border-radius: 40px;
+}
+
